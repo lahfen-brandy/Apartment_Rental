@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartment Rental</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+</head>
+
+<body>
+    <section id="main_container">
+        <div id="content_container">
+            <div id="form_container">
+                <p>Rental</p>
+                <form>
+
+                </form>
+            </div>
+            <div id="apartment-desc">
+                <div class="hero-section">
+                    <p>The Apartment</p>
+                    <div class="slide">
+                        <img class="hero-img" src="./assets/images/livingroom.jpg">
+                        <h1>Living Room</h1>
+                    </div>
+                    <div class="slide" style="display: none;">
+                        <img class="hero-img" src="./assets/images/diningroom.jpg">
+                        <h1>Dining Room</h1>
+                    </div>
+                    <div class="slide" style="display: none;">
+                        <img class="hero-img" src="./assets/images/bedroom.jpg">
+                        <h1>BedRoom</h1>
+                    </div>
+                    <div class="slide" style="display: none;">
+                        <img class="hero-img" src="./assets/images/livingroom2.jpg">
+                        <h1>Living Room II</h1>
+                    </div>
+                </div>
+                <div class="img-pack-1">
+                    <img class="sec-img" src="./assets/images/livingroom.jpg" onclick="currentDiv(1)" title="Living room">
+                    <div class="overlay"></div>
+                </div>
+                <div class="img-pack-2">
+                    <img class="sec-img" src="./assets/images/diningroom.jpg" onclick="currentDiv(2)" title="Dining room">
+                    <div class="overlay"></div>
+                </div>
+                <div class="img-pack-3">
+                    <img class="sec-img" src="./assets/images/bedroom.jpg" onclick="currentDiv(3)" title="Bedroom">
+                    <div class="overlay"></div>
+                </div>
+                <div class="img-pack-4">
+                    <img class="sec-img" src="./assets/images/livingroom2.jpg" onclick="currentDiv(4)" title="Second Living Room">
+                    <div class="overlay"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>
