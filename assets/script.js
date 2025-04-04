@@ -8,19 +8,7 @@ function plusDivs(n) {
 
 function currentDiv(n) {
     showDivs(slideIndex = n);
-    var overlay = document.getElementsByClassName("overlay");
-    if (slideIndex = 0) {
-        overlay[0].style.display = "none";
-    }
-    else if (slideIndex = 1) {
-        overlay[1].style.display = "none";
-    }
-    else if (slideIndex = 2) {
-        overlay[2].style.display = "none";
-    }
-    else if (slideIndex = 3) {
-        overlay[3].style.display = "none";
-    }
+    // var overlay = document.getElementsByClassName("overlay");
 }
 
 function showDivs(n) {
