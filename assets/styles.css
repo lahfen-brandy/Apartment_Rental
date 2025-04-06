@@ -1,0 +1,220 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "lato", sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+#main_container{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+}
+#content_container{
+    display: flex;
+    justify-content: flex-end;
+}
+#form_container{
+    display: flex;
+    flex-wrap: wrap;
+    background: lightgray;
+    width: 15%;
+    height: 100%;
+    position: fixed;
+    left: 20%;
+    border-left: 1px solid rgb(138, 138, 138);
+}
+.form-header{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 0 0 20px;
+    width: 50%;
+    height: 15%;
+    div{
+        margin: 0;
+    }
+    p{
+          font-size: 24px;
+          color: rgb(68, 68, 68);
+          font-weight: normal;
+          span{
+            display: inline-block;
+            font-size: 30px;
+            position: relative;
+            top: 6px;
+        }
+    }
+    span{
+        font-weight: normal;
+        font-size: 14px;
+    }
+}
+#form_container form{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    margin: 0;
+    .input{
+        padding: 0;
+        gap: 0;
+        margin: 0;
+        p{
+            margin: 0 0 10px 0;
+        }
+    }
+    input{
+        padding: 10px;
+        width: 100%;
+    }
+}
+.form{
+    display: flex;
+    height: 50%;
+    position: relative;
+    bottom: 15%;
+}
+#apartment-desc{
+    display: flex;
+    flex-wrap: wrap;
+    width: 55%;
+    padding: 10px;
+    position: relative;
+    right: 14%;
+    gap: 8px;
+    border-right: 1px solid rgb(191, 187, 187);
+    .apartment-paragraph{
+      font-size: 30px;
+      margin-bottom: 20px;
+      font-weight: normal;
+      color: #05aa05;
+    }
+    .hero-section{
+        width: 100%;
+        div{
+            position: relative;
+            h1{
+            font-size: 16px;
+            color: white;
+            padding: 20px;
+            font-weight: normal;
+            background: black;
+            position: absolute;
+            bottom: 2%;
+        }}
+    }
+    .hero-img{
+        width: 100%;
+    }
+    .sec-img{
+        width: 170px;
+        height: 100%;
+    }
+}
+.img-option{
+    display: flex;
+    /* position: absolute; */
+    /* top: 42%; */
+    /* width: 100%; */
+    gap: 10px;
+}
+.img-pack-1,
+.img-pack-2,
+.img-pack-3,
+.img-pack-4{
+    display: flex;
+    width: 100%;
+    position: relative;
+    img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    }
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-size: cover;
+    transition: 1s;
+}
+.img-pack-1 .overlay{
+    background-image: linear-gradient(#00000000, #0000005e, #0000005e), url('./images/livingroom.jpg');
+}
+.img-pack-2 .overlay{
+    background-image: linear-gradient(#00000000, #0000005e, #0000005e), url('./images/diningroom.jpg');
+}
+.img-pack-3 .overlay{
+    background-image: linear-gradient(#00000000, #0000005e, #0000005e), url('./images/bedroom.jpg');
+}
+.img-pack-4 .overlay{
+    background-image: linear-gradient(#00000000, #0000005e, #0000005e), url('./images/livingroom2.jpg');
+}
+.img-pack-1:hover .overlay {
+    opacity: 0;
+    display: none;
+    transition: 0.00000001s;
+}
+.img-pack-2:hover .overlay {
+    opacity: 1;
+    display: none;
+    transition: 1s;
+}
+.img-pack-3:hover .overlay {
+    opacity: 1;
+    display: none;
+    transition: 1s;
+}
+.img-pack-4:hover .overlay {
+    opacity: 1;
+    display: none;
+    transition: 1s;
+}
+
+#space_desc{
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: space-between;
+    h1{
+        padding-bottom: 20px;
+        width: 100%;
+    }
+}
+#space_desc .space_desc-1, .space_desc-2{
+    padding-top: 10px;
+    font-size: 20px;
+    p{
+        font-weight: normal;
+        padding: 10px;
+        span{
+            display: inline-block;
+            font-size: 18px;
+            position: relative;
+            top: 3px;
+        }
+    }
+}
+
+#amenities_desc{
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: space-between;
+    h1{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+}
+#amenities_desc .amenities_desc-1, .amenities_desc-2{
+    padding-top: 10px;
+    font-size: 20px;
+    p{
+        font-weight: normal;
+        padding: 10px;
+    }
+}

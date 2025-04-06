@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartment Rental</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+</head>
+
+<body>
+    <section id="main_container">
+        <div id="content_container">
+            <div id="form_container">
+                <div class="form-header">
+                    <div>
+                        <p>Rental</p>
+                    </div>
+                    <div>
+                        <p>From $<span>99</span></p>
+                    </div>
+                    <div><span>per night</span></div>
+                </div>
+                <div class="form">
+                    <form>
+                        <div class="input">
+                            <p>Check In</p>
+                            <input placeholder="DD MM YYYY" name="date">
+                        </div>
+                        <div class="input">
+                            <p>Check Out</p>
+                            <input placeholder="DD MM YYYY" name="date">
+                        </div>
+                        <div class="input">
+                            <p>Adults</p>
+                            <input placeholder="1" name="number">
+                        </div>
+                        <div class="input">
+                            <p>Kids</p>
+                            <input placeholder="0" name="number" type="number">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="apartment-desc">
+                <div class="hero-section">
+                    <p class="apartment-paragraph">The Apartment</p>
+                    <div class="slide">
+                        <img class="hero-img" src="./assets/images/livingroom.jpg">
+                        <h1>Living Room</h1>
+                    </div>
+                    <div class="slide" style="display: none;">
+                        <img class="hero-img" src="./assets/images/diningroom.jpg">
+                        <h1>Dining Room</h1>
+                    </div>
+                    <div class="slide" style="display: none;">
+                        <img class="hero-img" src="./assets/images/bedroom.jpg">
+                        <h1>BedRoom</h1>
+                    </div>
+                    <div class="slide" style="display: none;">
+                        <img class="hero-img" src="./assets/images/livingroom2.jpg">
+                        <h1>Living Room II</h1>
+                    </div>
+                </div>
+                <div class="img-option">
+                    <div class="img-pack-1">
+                        <img class="sec-img" src="./assets/images/livingroom.jpg" onclick="currentDiv(1)"
+                            title="Living room">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="img-pack-2">
+                        <img class="sec-img" src="./assets/images/diningroom.jpg" onclick="currentDiv(2)"
+                            title="Dining room">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="img-pack-3">
+                        <img class="sec-img" src="./assets/images/bedroom.jpg" onclick="currentDiv(3)" title="Bedroom">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="img-pack-4">
+                        <img class="sec-img" src="./assets/images/livingroom2.jpg" onclick="currentDiv(4)"
+                            title="Second Living Room">
+                        <div class="overlay"></div>
+                    </div>
+                </div>
+                <div id="space_desc">
+                    <h1>The Space</h1>
+                    <div class="space_desc-1">
+                        <p>Max people: 4</p>
+                        <p>Bathrooms: 2</p>
+                        <p>Bedrooms: 1</p>
+                    </div>
+                    <div class="space_desc-2">
+                        <p>Check in: After <span>3</span>PM</p>
+                        <p>Check out: <span>12</span>PM</p>
+                    </div>
+                </div>
+                <div id="amenities_desc">
+                    <h1>Amenities</h1>
+                    <div class="amenities_desc-1">
+                        <p>Shower</p>
+                        <p>WiFi</p>
+                        <p>TV</p>
+                    </div>
+                    <div class="amenities_desc-2">
+                        <p>Kitchen</p>
+                        <p>Heating</p>
+                        <p>Accessible</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>
