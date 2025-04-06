@@ -117,7 +117,7 @@ body{
     /* position: absolute; */
     /* top: 42%; */
     /* width: 100%; */
-    gap: 10px;
+    gap: 7px;
 }
 .img-pack-1,
 .img-pack-2,
@@ -216,5 +216,43 @@ body{
     p{
         font-weight: normal;
         padding: 10px;
+    }
+}
+#extra-info_desc{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    line-height: 25px;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    h1{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    p{
+        font-family: "Lato", sans-serif;
+        font-weight: normal;
+        letter-spacing: 1px;
+        text-align: left;
+        font-size: 17px;
+    }
+}
+#rules_desc{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    line-height: 25px;
+    justify-content: space-between;
+    h1{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    p{
+        font-weight: normal;
+        letter-spacing: 1px;
+        text-align: left;
+        font-size: 17px;
     }
 }
