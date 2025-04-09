@@ -26,3 +26,20 @@ function showDivs(n) {
     x[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " hero-img";
 }
+
+// blured background
+const subscribeBtn = document.getElementsByClassName("subscribe_btn");
+const subscribeForm = document.getElementById("subscribe-form");
+const formOverlay = document.querySelector("form-overlay");
+const closeBtn = document.getElementsById("close-btn");
+const close_Btn = document.getElementsByClassName("close-btn");
+
+
+closeBtn.onclick = function (){
+    if (subscribeForm.classList.contains("active")) {
+        subscribeForm.classList.remove("active");
+        close_Btn
+    } else {
+        subscribeForm.classList.add('active');
+    }
+}
