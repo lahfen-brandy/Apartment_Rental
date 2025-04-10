@@ -285,7 +285,7 @@ body {
     }
 }
 
-#subscribe_btn {
+#subscribe_section {
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
@@ -315,21 +315,22 @@ body {
 }
 
 /* popup and blur background */
-#subscribe-form{
+#subscribe-form {
     /* display: none; */
     position: fixed;
     height: 250px;
     width: 50%;
     top: 10%;
-    left: 23%;
-    transform: translate(-50%, -50%, );
+    left: -23%;
+    /* transform: translate(-50%, -50%, ); */
+    transition: 1s;
     background: white;
     color: #333;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    z-index: 1;
+    z-index: 2;
     text-align: center;
-    
+
 
     h2 {
         padding: 30px 0 20px 0;
@@ -345,19 +346,22 @@ body {
         font-weight: normal;
 
     }
-    input{
+
+    input {
         width: 90%;
         padding: 10px 0;
     }
 }
 
-#subscribe-form.active{
-        display: flex;
-        right: 1px;
-        width: 100%;
-        margin-top: 30px;
-        transition: 0.000000001s;
+#subscribe-form.active {
+    display: block;
+    top: 10%;
+    left: 23%;
+    width: 100%;
+    margin-top: 30px;
+    transition: 1s;
 }
+
 .form_subscribe-btn {
     align-items: center;
     justify-content: center;
@@ -377,7 +381,7 @@ body {
 }
 
 .form-overlay {
-    /* display: none; */
+    display: none;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -399,10 +403,12 @@ body {
     padding: 5px 20px;
     font-family: 'Courier New', Courier, monospace;
 }
-.close_btn:hover{
+
+.close_btn:hover {
     background: lightgray;
     padding: 5px 20px;
 }
+
 #rules_desc {
     width: 100%;
     display: flex;

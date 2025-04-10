@@ -27,19 +27,21 @@ function showDivs(n) {
     dots[slideIndex - 1].className += " hero-img";
 }
 
-// blured background
-const subscribeBtn = document.getElementsByClassName("subscribe_btn");
+// open and close popup menu
 const subscribeForm = document.getElementById("subscribe-form");
 const formOverlay = document.querySelector("form-overlay");
-const closeBtn = document.getElementsById("close-btn");
-const close_Btn = document.getElementsByClassName("close-btn");
+const closeBtn = document.getElementsByClassName("close_btn");
+const subscribeBtn = document.getElementsByClassName("divBtn");
 
-
-closeBtn.onclick = function (){
+subscribeBtn.onclick = function () {
     if (subscribeForm.classList.contains("active")) {
         subscribeForm.classList.remove("active");
-        close_Btn
     } else {
         subscribeForm.classList.add('active');
+    }
+}
+closeBtn.onclick = function () {
+    if (subscribeForm.classList.contains("active")) {
+        subscribeForm.classList.remove("active");
     }
 }
