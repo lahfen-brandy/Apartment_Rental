@@ -31,7 +31,7 @@ function showDivs(n) {
 const subscribeForm = document.getElementById("subscribe-form");
 const formOverlay = document.querySelector("form-overlay");
 const closeBtn = document.getElementsByClassName("close_btn");
-const subscribeBtn = document.getElementsByClassName("divBtn");
+const subscribeBtn = document.getElementsById("divBtn");
 
 subscribeBtn.onclick = function () {
     if (subscribeForm.classList.contains("active")) {
