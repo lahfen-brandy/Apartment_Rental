@@ -88,7 +88,66 @@ body {
     height: 100px;
     padding: 0;
     position: relative;
-    top: -38%;
+    top: -22%;
+}
+#form_container .availability_btn{
+    background: #05aa05;
+    border: none;
+    color: #fff;
+    margin-top: 10px;
+    font-size: 16.5px;
+    width: 85%;
+    cursor: pointer;
+    padding: 10px 30px;
+}
+#form_container .availability_btn:hover{
+    background: rgb(235, 234, 234);
+    color: #333;
+}
+#form_container .links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 5px;
+    position: relative;
+    top: 2%;
+    left: 10%;
+    width: 50%;
+    height: 100px;
+    button{
+        background: lightgray;
+        color: #333;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 10px 90px;
+        border: none;
+        font-weight: normal;
+        font-size: 18px;
+        width: 50%;
+    }
+    div a{
+        text-decoration: none;
+        background: lightgray;
+        color: #333;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 10px 60px;
+        border: none;
+        font-weight: normal;
+        font-size: 18px;
+        width: 10%;
+    }
+    .apartment_link a{
+        padding: 10px 75px;
+    }
+
+   
+}
+#form_container .links button:hover{
+      background: rgb(235, 234, 234); 
+      color: #333;
 }
 #sideNav {
     width: 150px;
@@ -436,7 +495,7 @@ body {
 
 /* popup and blur background */
 #subscribe-form {
-    /* display: none; */
+    display: none;
     position: fixed;
     height: 250px;
     width: 50%;
