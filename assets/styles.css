@@ -90,7 +90,8 @@ body {
     position: relative;
     top: -22%;
 }
-#form_container .availability_btn{
+
+#form_container .availability_btn {
     background: #05aa05;
     border: none;
     color: #fff;
@@ -100,55 +101,66 @@ body {
     cursor: pointer;
     padding: 10px 30px;
 }
-#form_container .availability_btn:hover{
+
+#form_container .availability_btn:hover {
     background: rgb(235, 234, 234);
     color: #333;
 }
-#form_container .links{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 5px;
-    position: relative;
-    top: 2%;
-    left: 10%;
-    width: 50%;
+
+#form_container .links {
+    display: block;
+    width: 90%;
     height: 100px;
-    button{
+
+    button {
         background: lightgray;
         color: #333;
         display: flex;
+        cursor: pointer;
         align-items: center;
-        justify-content: flex-end;
-        padding: 10px 90px;
+        justify-content: flex-start;
+        padding: 10px 0 10px 15px;
         border: none;
+        position: relative;
+        left: -0.2%;
         font-weight: normal;
         font-size: 18px;
-        width: 50%;
+        width: 111%;
     }
-    div a{
+
+    div a {
         text-decoration: none;
         background: lightgray;
         color: #333;
         display: flex;
         align-items: center;
-        justify-content: flex-end;
-        padding: 10px 60px;
+        justify-content: flex-start;
+        padding: 10px 105px 10px 15px;
         border: none;
         font-weight: normal;
         font-size: 18px;
-        width: 10%;
-    }
-    .apartment_link a{
-        padding: 10px 75px;
+        width: 62%;
     }
 
-   
+    .apartment_link a {
+        display: flex;
+        justify-content: flex-start;
+        padding: 10px 105px 10px 15px;
+    }
+
+
 }
-#form_container .links button:hover{
-      background: rgb(235, 234, 234); 
-      color: #333;
+
+#form_container .links button:hover {
+    background: rgb(235, 234, 234);
+    color: #333;
 }
+
+#form_container div a:hover {
+    background: rgb(235, 234, 234);
+    color: #333;
+}
+
 #sideNav {
     width: 150px;
     height: 100%;
@@ -163,6 +175,7 @@ body {
 
 #sideNav.active {
     display: flex;
+    position: fixed;
     left: 1px;
     width: 70%;
     margin-top: 30px;
@@ -220,12 +233,85 @@ body {
         width: 100%;
     }
 }
+
 #sideNav .form {
     display: flex;
     height: 100px;
     padding: 0;
     position: relative;
     top: -4%;
+}
+#sideNav .availability_btn {
+    background: #05aa05;
+    border: none;
+    color: #fff;
+    margin-top: 10px;
+    font-size: 16.5px;
+    width: 85%;
+    cursor: pointer;
+    padding: 10px 30px;
+}
+
+#sideNav .availability_btn:hover {
+    background: rgb(235, 234, 234);
+    color: #333;
+}
+
+#sideNav .links {
+    display: block;
+    position: relative;
+    top: 38%;
+    left: 1%;
+    width: 90%;
+    height: 100px;
+
+    button {
+        background: lightgray;
+        color: #333;
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 10px 0 10px 15px;
+        border: none;
+        position: relative;
+        left: -0.2%;
+        font-weight: normal;
+        font-size: 18px;
+        width: 111%;
+    }
+
+    div a {
+        text-decoration: none;
+        background: lightgray;
+        color: #333;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 10px 98px 10px 15px;
+        border: none;
+        font-weight: normal;
+        font-size: 18px;
+        width: 62%;
+    }
+
+    .apartment_link a {
+        display: flex;
+        justify-content: flex-start;
+        padding: 10px 98px 10px 15px;
+    }
+
+
+}
+
+#sideNav .links button:hover {
+    background: rgb(235, 234, 234);
+    color: #333;
+}
+
+#sideNav div a:hover {
+    background: rgb(235, 234, 234);
+    color: #333;
 }
 
 #menuBtn {
@@ -245,6 +331,7 @@ body {
     width: 10px;
     margin-top: 12px;
 }
+
 #sideNav,
 #menuBtn,
 #form_container {
@@ -255,6 +342,7 @@ body {
     &#sideNav {
         display: none;
     }
+
     @media only screen and (max-width: 790px) {
         &#sideNav {
             display: inline-block;
@@ -263,7 +351,8 @@ body {
         &#menuBtn {
             display: inline-block;
         }
-        &#form_container{
+
+        &#form_container {
             display: none;
         }
     }
@@ -485,6 +574,7 @@ body {
     font-size: 17px;
     color: #fff;
     width: 50%;
+ 
 }
 
 .subscribe_btn:hover {
@@ -500,7 +590,7 @@ body {
     height: 250px;
     width: 50%;
     top: 10%;
-    left: -23%;
+    left: 23%;
     /* transform: translate(-50%, -50%, ); */
     transition: 1s;
     background: white;
@@ -534,11 +624,22 @@ body {
 
 #subscribe-form.active {
     display: block;
+    height: 250px;
+    width: 50%;
     top: 10%;
     left: 23%;
-    width: 100%;
     margin-top: 30px;
-    transition: 1s;
+    transition: 1s;    
+}
+.form-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(206, 196, 196, 0.5);
+    /* backdrop-filter: blur(5px); */
 }
 
 .form_subscribe-btn {
@@ -559,16 +660,6 @@ body {
     cursor: pointer;
 }
 
-.form-overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background-color: rgba(206, 196, 196, 0.5);
-    /* backdrop-filter: blur(5px); */
-}
 
 .close_btn {
     position: absolute;
@@ -582,6 +673,7 @@ body {
     padding: 5px 20px;
     font-family: 'Courier New', Courier, monospace;
 }
+
 .close_btn:hover {
     background: lightgray;
     padding: 5px 20px;
