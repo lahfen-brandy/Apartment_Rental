@@ -31,7 +31,7 @@ function showDivs(n) {
 const subscribeForm = document.getElementById("subscribe-form");
 const formOverlay = document.querySelector("form-overlay");
 const closeBtn = document.getElementsByClassName("close_btn");
-const subscribeBtn = document.getElementsById("divBtn");
+const subscribeBtn = document.getElementById("divBtn");
 
 subscribeBtn.onclick = function () {
     if (subscribeForm.classList.contains("active")) {
@@ -43,6 +43,9 @@ subscribeBtn.onclick = function () {
 closeBtn.onclick = function () {
     if (subscribeForm.classList.contains("active")) {
         subscribeForm.classList.remove("active");
+    }
+    else {
+        subscribeForm.classList.add('active');
     }
 }
 
@@ -62,15 +65,15 @@ menuBtn.onclick = function () {
         menu.src = "assets/images/close.png";
     }
 }
-document.addEventListener('scroll', () => {
-    const nav = document.querySelector('nav')
-    if (window.scrollY > 0) {
-        nav.classList.add('scrolled');
-    }
-    else {
-        nav.classList.remove('scrolled')
-    }
-})
+// document.addEventListener('scroll', () => {
+//     const nav = document.querySelector('nav')
+//     if (window.scrollY > 0) {
+//         nav.classList.add('scrolled');
+//     }
+//     else {
+//         nav.classList.remove('scrolled')
+//     }
+// })
 side_nav_list_onclick.onclick = function () {
     if (onclik.classList.contains("active")) {
         SideNav.classList.remove("active");
