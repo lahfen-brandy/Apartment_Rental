@@ -723,6 +723,15 @@ body {
 .contact-dtls {
     line-height: 30px;
     margin: 20px 0;
+    img{
+        width: 20px;
+    }
+    p{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+    }
 }
 
 .questionaire {
