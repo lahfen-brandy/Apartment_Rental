@@ -28,19 +28,72 @@ function showDivs(n) {
 }
 
 // open and close popup menu
+const mobileSubscribeForm = document.getElementById("mobile_subscribe-form");
 const subscribeForm = document.getElementById("subscribe-form");
-const formOverlay = document.querySelector("form-overlay");
-const closeBtn = document.getElementsByClassName("close_btn");
+const formOverlay = document.getElementById("form-overlay");
+const closeBtn = document.getElementById("close-btn");
+const closeBtn1 = document.getElementById("close-btn1");
 const subscribeBtn = document.getElementById("divBtn");
+const subscribeBtn1 = document.getElementById("divBtn0");
+const subscribeBtn2 = document.getElementById("divBtn1");
+const mobileOverlay = document.getElementById("sideNav_form-overlay");
 
 subscribeBtn.onclick = function () {
+    if (formOverlay.classList.contains("active")) {
+        formOverlay.classList.remove("active");
+    } else {
+        formOverlay.classList.add('active');
+    }
+    if (subscribeForm.classList.contains("active")) {
+        subscribeForm.classList.remove("active");
+    } else {
+        subscribeForm.classList.add('active');
+    
+    }
+}
+subscribeBtn1.onclick = function () {
+    if (formOverlay.classList.contains("active")) {
+        formOverlay.classList.remove("active");
+    } else {
+        formOverlay.classList.add('active');
+    }
+    if (mobileSubscribeForm.classList.contains("active")) {
+        mobileSubscribeForm.classList.remove("active");
+    } else {
+        mobileSubscribeForm.classList.add('active');
+    }
+}
+closeBtn1.onclick = function () {
+    if (formOverlay.classList.contains("active")) {
+        formOverlay.classList.remove("active");
+    } else {
+        formOverlay.classList.add('active');
+    }
+    if (mobileSubscribeForm.classList.contains("active")) {
+        mobileSubscribeForm.classList.remove("active");
+    } else {
+        mobileSubscribeForm.classList.add('active');
+    }
+}
+subscribeBtn2.onclick = function () {
+    if (formOverlay.classList.contains("active")) {
+        formOverlay.classList.remove("active");
+    } else {
+        formOverlay.classList.add('active');
+    }
     if (subscribeForm.classList.contains("active")) {
         subscribeForm.classList.remove("active");
     } else {
         subscribeForm.classList.add('active');
     }
 }
+
 closeBtn.onclick = function () {
+    if (formOverlay.classList.contains("active")) {
+        formOverlay.classList.remove("active");
+    } else {
+        formOverlay.classList.add('active');
+    }
     if (subscribeForm.classList.contains("active")) {
         subscribeForm.classList.remove("active");
     }
@@ -48,15 +101,7 @@ closeBtn.onclick = function () {
         subscribeForm.classList.add('active');
     }
 }
-
-//side form on mobile view
-const menuBtn = document.getElementById("menuBtn");
-const SideNav = document.getElementById("sideNav");
-const menu = document.getElementById("menu");
-const side_nav_list_onclick = document.getElementsByClassName("side_nav_list");
-const onclik = document.getElementsByClassName("side_nav_list a");
-
-menuBtn.onclick = function () {
+mobileOverlay.onclick = function (){
     if (SideNav.classList.contains("active")) {
         SideNav.classList.remove("active");
         menu.src = "assets/images/menu.png";
@@ -64,7 +109,33 @@ menuBtn.onclick = function () {
         SideNav.classList.add('active');
         menu.src = "assets/images/close.png";
     }
+     if (mobileOverlay.classList.contains("active")) {
+        mobileOverlay.classList.remove("active");
+    } else {
+        mobileOverlay.classList.add('active');
+    }
 }
+//side form on mobile view
+const menuBtn = document.getElementById("menuBtn");
+const SideNav = document.getElementById("sideNav");
+const menu = document.getElementById("menu");
+const side_nav_list_onclick = document.getElementsByClassName("side_nav_list");
+const onclik = document.getElementsByClassName("side_nav_list a");
+menu.onclick = function () {
+    if (SideNav.classList.contains("active")) {
+        SideNav.classList.remove("active");
+        menu.src = "assets/images/menu.png";
+    } else {
+        SideNav.classList.add('active');
+        menu.src = "assets/images/close.png";
+    }
+     if (mobileOverlay.classList.contains("active")) {
+        mobileOverlay.classList.remove("active");
+    } else {
+        mobileOverlay.classList.add('active');
+    }
+}
+
 // document.addEventListener('scroll', () => {
 //     const nav = document.querySelector('nav')
 //     if (window.scrollY > 0) {
