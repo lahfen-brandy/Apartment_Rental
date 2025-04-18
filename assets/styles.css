@@ -67,6 +67,7 @@ body {
     margin: 0;
 
     .input {
+        width: 190px;
         padding: 0;
         gap: 0;
         margin: 0;
@@ -91,7 +92,7 @@ body {
 }
 
 #form_container .availability_btn {
-    background: #05aa05;
+    background: #089ea3;
     border: none;
     color: #fff;
     margin-top: 10px;
@@ -167,13 +168,14 @@ body {
     top: -30px;
     background: lightgray;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    z-index: 2;
+    z-index: 5;
     transition: 0.000000001s;
 }
 #sideNav.active {
     display: flex;
     position: fixed;
     left: 1px;
+    z-index: 5;
     width: 290px;
     margin-top: 30px;
     transition: 0.000000001s;
@@ -240,7 +242,7 @@ body {
 }
 
 #sideNav .availability_btn {
-    background: #05aa05;
+    background: #089ea3;
     border: none;
     color: #fff;
     margin-top: 10px;
@@ -350,7 +352,7 @@ body {
     bottom: 0;
     right: 0;
     left: 0;
-    background-color: rgba(206, 196, 196, 0.5);
+    background-color: rgba(205, 203, 197, 0.3);
     /* backdrop-filter: blur(5px); */
     transition: 1s;
     z-index: -2;
@@ -406,7 +408,7 @@ body {
         font-size: 30px;
         margin-bottom: 20px;
         font-weight: normal;
-        color: #05aa05;
+        color: #089ea3;
     }
 
     .hero-section {
@@ -626,7 +628,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #05aa05;
+    background: #089ea3;
     padding: 10px 90px;
     border: none;
     font-weight: normal;
@@ -744,7 +746,7 @@ body {
     bottom: 0;
     right: 0;
     left: 0;
-    background-color: rgba(206, 196, 196, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     /* backdrop-filter: blur(5px); */
     transition: 1s;
     /* z-index: 1; */
@@ -766,7 +768,7 @@ body {
     bottom: 0;
     right: 0;
     left: 0;
-    background-color: rgba(206, 196, 196, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     /* backdrop-filter: blur(5px); */
     transition: 1s;
     /* z-index: 1; */
@@ -785,7 +787,7 @@ body {
 .form_subscribe-btn {
     align-items: center;
     justify-content: center;
-    background: #05aa05;
+    background: #089ea3;
     margin-top: 15px;
     padding: 15px 25px;
     border: none;
@@ -879,7 +881,7 @@ body {
         align-items: center;
         cursor: pointer;
         justify-content: center;
-        background: #05aa05;
+        background: #089ea3;
         padding: 11px 40px;
         border: none;
         font-weight: normal;
@@ -900,13 +902,14 @@ body {
     gap: 2px; */
     margin-top: 60px;
 
-    span {
+    a {
+        color: #333;
         text-decoration: underline;
     }
 }
 
-.powered-by span:hover {
-    color: #05aa05;
+.powered-by a:hover {
+    color: #089ea3;
     cursor: pointer
 }
 /* Responsive Design */
