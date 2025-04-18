@@ -48,7 +48,7 @@ subscribeBtn.onclick = function () {
         subscribeForm.classList.remove("active");
     } else {
         subscribeForm.classList.add('active');
-    
+
     }
 }
 subscribeBtn1.onclick = function () {
@@ -101,7 +101,7 @@ closeBtn.onclick = function () {
         subscribeForm.classList.add('active');
     }
 }
-mobileOverlay.onclick = function (){
+mobileOverlay.onclick = function () {
     if (SideNav.classList.contains("active")) {
         SideNav.classList.remove("active");
         menu.src = "assets/images/menu.png";
@@ -109,7 +109,7 @@ mobileOverlay.onclick = function (){
         SideNav.classList.add('active');
         menu.src = "assets/images/close.png";
     }
-     if (mobileOverlay.classList.contains("active")) {
+    if (mobileOverlay.classList.contains("active")) {
         mobileOverlay.classList.remove("active");
     } else {
         mobileOverlay.classList.add('active');
@@ -129,7 +129,7 @@ menu.onclick = function () {
         SideNav.classList.add('active');
         menu.src = "assets/images/close.png";
     }
-     if (mobileOverlay.classList.contains("active")) {
+    if (mobileOverlay.classList.contains("active")) {
         mobileOverlay.classList.remove("active");
     } else {
         mobileOverlay.classList.add('active');
