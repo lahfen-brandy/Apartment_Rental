@@ -136,15 +136,15 @@ menu.onclick = function () {
     }
 }
 
-// document.addEventListener('scroll', () => {
-//     const nav = document.querySelector('nav')
-//     if (window.scrollY > 0) {
-//         nav.classList.add('scrolled');
-//     }
-//     else {
-//         nav.classList.remove('scrolled')
-//     }
-// })
+document.addEventListener('scroll', () => {
+    const nav = document.querySelector('nav')
+    if (window.scrollY > 0) {
+        nav.classList.add('scrolled');
+    }
+    else {
+        nav.classList.remove('scrolled')
+    }
+})
 side_nav_list_onclick.onclick = function () {
     if (onclik.classList.contains("active")) {
         SideNav.classList.remove("active");
