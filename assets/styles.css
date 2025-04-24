@@ -170,7 +170,7 @@ body {
     top: -30px;
     background: lightgray;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    z-index: 1;
+    z-index: 10;
     transition: 0.000000001s;
 }
 
@@ -178,7 +178,7 @@ body {
     display: flex;
     position: fixed;
     left: 1px;
-    z-index: 1;
+    z-index: 10;
     width: 290px;
     margin-top: 30px;
     transition: 0.000000001s;
@@ -357,6 +357,8 @@ body {
     bottom: 0;
     right: 0;
     left: 0;
+    z-index: -3;
+    /* background-color: red; */
     background-color: rgba(205, 203, 197, 0.3);
     /* backdrop-filter: blur(5px); */
     transition: 1s;

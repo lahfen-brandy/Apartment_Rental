@@ -116,12 +116,15 @@ mobileOverlay.onclick = function () {
     }
 }
 //side form on mobile view
-const menuBtn = document.getElementById("menuBtn");
 const SideNav = document.getElementById("sideNav");
+const menuBtn = document.getElementById("menuBtn");
 const menu = document.getElementById("menu");
 const side_nav_list_onclick = document.getElementsByClassName("side_nav_list");
 const onclik = document.getElementsByClassName("side_nav_list a");
 menu.onclick = function () {
+    SideNav.style.zIndex="10";
+    menuBtn.style.zIndex="-1";
+    mobileOverlay.style.zIndex="-100";
     if (SideNav.classList.contains("active")) {
         SideNav.classList.remove("active");
         menu.src = "assets/images/menu.png";
