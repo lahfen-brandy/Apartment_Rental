@@ -987,15 +987,3 @@ body {
         left: 50px;
     }
 }
-@media only screen and (width: 1440px){
-    #content_container{
-        width: 100%;
-    }
-    #apartment-desc {
-        width: 65%;
-        right: -15%;
-    }
-    #form_container{
-        left: 50px;
-    }
-}
